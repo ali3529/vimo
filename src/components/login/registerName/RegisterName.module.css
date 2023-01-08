@@ -1,0 +1,49 @@
+.registerNameContainer {
+
+}
+
+.formHeader {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.backBtn {
+    width: 20%;
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backBtn img {
+    width: 11px;
+}
+
+.formTitleContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    direction: rtl;
+    width: 80%;
+    height: auto;
+}
+
+.formTitle {
+    font-size: 2rem;
+    font-weight: 800;
+    text-shadow: 0 0 4px #212127;
+}
+
+.formDescription {
+    font-size: 1.2rem;
+    font-weight: 500;
+    direction: rtl;
+    text-align: right;
+    text-shadow: 0 0 4px #212127;
+}

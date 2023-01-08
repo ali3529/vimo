@@ -1,0 +1,113 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
+
+@font-face {
+    font-family: Yekan Bakh NoEn;
+    font-style: normal;
+    font-weight: 100;
+    src: url('TTF/YekanBakhNoEn-Thin.ttf') format('ttf'),
+    url('OTF/YekanBakhNoEn-Thin.otf') format('otf'),
+    url('Webfonts/fonts/woff/YekanBakhNoEn-Thin.woff') format('woff'),
+    url('Webfonts/fonts/woff2/YekanBakhNoEn-Thin.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Yekan Bakh NoEn;
+    font-style: normal;
+    font-weight: 300;
+    src: url('TTF/YekanBakhNoEn-Light.ttf') format('ttf'),
+    url('OTF/YekanBakhNoEn-Light.otf') format('otf'),
+    url('Webfonts/fonts/woff/YekanBakhNoEn-Light.woff') format('woff'),
+    url('Webfonts/fonts/woff2/YekanBakhNoEn-Light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Yekan Bakh NoEn;
+    font-style: normal;
+    font-weight: normal;
+    src: url('TTF/YekanBakhNoEn-Regular.ttf') format('ttf'),
+    url('OTF/YekanBakhNoEn-Regular.otf') format('otf'),
+    url('Webfonts/fonts/woff/YekanBakhNoEn-Regular.woff') format('woff'),
+    url('Webfonts/fonts/woff2/YekanBakhNoEn-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Yekan Bakh NoEn;
+    font-style: normal;
+    font-weight: 600;
+    src: url('TTF/YekanBakhNoEn-SemiBold.ttf') format('ttf'),
+    url('OTF/YekanBakhNoEn-SemiBold.otf') format('otf'),
+    url('Webfonts/fonts/woff/YekanBakhNoEn-SemiBold.woff') format('woff'),
+    url('Webfonts/fonts/woff2/YekanBakhNoEn-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Yekan Bakh NoEn;
+    font-style: normal;
+    font-weight: bold;
+    src: url('TTF/YekanBakhNoEn-Bold.ttf') format('ttf'),
+    url('OTF/YekanBakhNoEn-Bold.otf') format('otf'),
+    url('Webfonts/fonts/woff/YekanBakhNoEn-Bold.woff') format('woff'),
+    url('Webfonts/fonts/woff2/YekanBakhNoEn-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Yekan Bakh NoEn;
+    font-style: normal;
+    font-weight: 800;
+    src: url('TTF/YekanBakhNoEn-ExtraBold.ttf') format('ttf'),
+    url('OTF/YekanBakhNoEn-ExtraBold.otf') format('otf'),
+    url('Webfonts/fonts/woff/YekanBakhNoEn-ExtraBold.woff') format('woff'),
+    url('Webfonts/fonts/woff2/YekanBakhNoEn-ExtraBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Yekan Bakh NoEn;
+    font-style: normal;
+    font-weight: 900;
+    src: url('TTF/YekanBakhNoEn-Black.ttf') format('ttf'),
+    url('OTF/YekanBakhNoEn-Black.otf') format('otf'),
+    url('Webfonts/fonts/woff/YekanBakhNoEn-Black.woff') format('woff'),
+    url('Webfonts/fonts/woff2/YekanBakhNoEn-Black.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Yekan Bakh NoEn;
+    font-style: normal;
+    font-weight: 950;
+    src: url('TTF/YekanBakhNoEn-ExtraBlack.ttf') format('ttf'),
+    url('OTF/YekanBakhNoEn-ExtraBlack.otf') format('otf'),
+    url('Webfonts/fonts/woff/YekanBakhNoEn-ExtraBlack.woff') format('woff'),
+    url('Webfonts/fonts/woff2/YekanBakhNoEn-ExtraBlack.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Yekan Bakh FaNum;
+    font-style: normal;
+    font-weight: 600;
+    src: url('TTF/YekanBakhFaNum-SemiBold.ttf') format('ttf'),
+    url('OTF/YekanBakhFaNum-SemiBold.otf') format('otf'),
+    url('Webfonts/fonts/woff/YekanBakhFaNum-SemiBold.woff') format('woff'),
+    url('Webfonts/fonts/woff2/YekanBakhFaNum-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Yekan Bakh FaNum;
+    font-style: normal;
+    font-weight: 500;
+    src: url('TTF/YekanBakhFaNum-Regular.ttf') format('ttf'),
+    url('OTF/YekanBakhFaNum-Regular.otf') format('otf'),
+    url('Webfonts/fonts/woff/YekanBakhFaNum-Regular.woff') format('woff'),
+    url('Webfonts/fonts/woff2/YekanBakhFaNum-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Yekan Bakh FaNum;
+    font-style: normal;
+    font-weight: 400;
+    src: url('TTF/YekanBakhFaNum-Light.ttf') format('ttf'),
+    url('OTF/YekanBakhFaNum-Light.otf') format('otf'),
+    url('Webfonts/fonts/woff/YekanBakhFaNum-Light.woff') format('woff'),
+    url('Webfonts/fonts/woff2/YekanBakhFaNum-Light.woff2') format('woff2');
+}

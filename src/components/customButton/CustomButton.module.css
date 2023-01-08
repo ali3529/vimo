@@ -1,0 +1,13 @@
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--primary);
+    background: var(--gray);
+    width: 100%;
+    min-width: 236px;
+    height: 48px;
+    border-radius: 32px;
+}

@@ -1,0 +1,40 @@
+.tabContainer {
+    position: fixed;
+    top: 0;
+    background: rgba(33, 33, 39, 0.25);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    height: 9vh;
+    z-index: 1;
+}
+
+.backBtn {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    align-items: center;
+}
+
+.backIcon {
+    width: 8px;
+    height: 15px;
+}
+
+.tabTitle {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    font-size: 1.6rem;
+    font-weight: 800;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}

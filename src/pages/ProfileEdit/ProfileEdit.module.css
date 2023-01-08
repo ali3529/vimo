@@ -1,0 +1,124 @@
+.profileEditPageContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.profileEditPageContentContainer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.profileEditPageContent {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10vh 0 2vh 0;
+}
+
+.profileEditForm {
+    background: var(--primary);
+    width: 95%;
+    height: auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.editNumberContainer {
+    width: 100%;
+    background: var(--primaryLight);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 10px 0 20px 0;
+}
+
+.phoneNumberContainer {
+    direction: rtl;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 1.4rem;
+}
+
+.phoneNumber {
+    font-weight: 500;
+}
+
+.editBtn {
+    width: 100%;
+    border: 2px solid var(--greenLight);
+    color: var(--greenLight);
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.exitProfileContainer {
+    direction: rtl;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.exitTitle{
+    font-size: 1.4rem;
+    margin-right: 10px;
+}
+
+.saveBtn{
+    width: 95%;
+    background: var(--greenLight);
+    border-radius: 32px;
+    font-size:1.4rem ;
+    font-weight: 600;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,622 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap%27");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "iransansXV";
+  src: url("/public/fonts/IRANSansXV.woff") format("woff-variations");
+
+  font-weight: 100 900;
+  font-display: fallback;
+}
+
+@layer base {
+  .fa-num {
+    -moz-font-feature-settings: "ss02";
+    -webkit-font-feature-settings: "ss02";
+    font-feature-settings: "ss02";
+  }
+
+  .ss03 {
+    -moz-font-feature-settings: "ss03";
+    -webkit-font-feature-settings: "ss03";
+    font-feature-settings: "ss03";
+  }
+}
+
+@layer components {
+  .fa-format-100 {
+    font-family: "iransansXV";
+    font-variation-settings: "wght" 100;
+  }
+
+  .fa-format-200 {
+    font-family: "iransansXV";
+    font-variation-settings: "wght" 200;
+  }
+
+  .fa-format-300 {
+    font-family: "iransansXV";
+    font-variation-settings: "wght" 300;
+  }
+
+  .fa-format-400 {
+    font-family: "iransansXV";
+    font-variation-settings: "wght" 400;
+  }
+
+  .fa-format-500 {
+    font-family: "iransansXV";
+    font-variation-settings: "wght" 500;
+  }
+
+  .fa-format-600 {
+    font-family: "iransansXV";
+    font-variation-settings: "wght" 600;
+  }
+
+  .fa-format-700 {
+    font-family: "iransansXV";
+    font-variation-settings: "wght" 700;
+  }
+
+  .fa-format-800 {
+    font-family: "iransansXV";
+    font-variation-settings: "wght" 800;
+  }
+
+  .fa-format-900 {
+    font-family: "iransansXV";
+    font-variation-settings: "wght" 900;
+  }
+}
+
+/* Preferred box-sizing value */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  touch-action: manipulation;
+  -ms-touch-action: manipulation;
+}
+
+* .ubuntuFont,
+* .ubuntuFont * {
+  font-family: "Roboto", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  font-size: 62.5%;
+  color: white;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  overscroll-behavior-x: none;
+}
+
+body {
+  user-select: none;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  max-width: 480px;
+  justify-content: center;
+  align-items: center;
+  max-width: 480px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  width: 100%;
+  height: 100%;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol,
+ul,
+menu {
+  list-style: none;
+}
+
+/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
+input,
+textarea {
+  -webkit-user-select: auto;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Firefox*/
+input[type="number"] {
+  -moz-appearance: textfield;
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+}
+
+input[type="tel"],
+input[type="text"] {
+  -moz-appearance: textfield;
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+
+.faNum {
+  font-family: "Yekan Bakh FaNum";
+  font-weight: 600;
+  font-size: 1.4rem;
+  direction: ltr;
+}
+
+.WrongText {
+  color: var(--red);
+  font-weight: 600 !important;
+}
+
+#backBtn:hover {
+  cursor: pointer;
+}
+
+/*HorizontalScrollMenu */
+.react-horizontal-scrolling-menu--item {
+  transition: all 0.2s ease-in-out;
+}
+
+.react-horizontal-scrolling-menu--wrapper {
+  overflow: visible !important;
+}
+
+.react-horizontal-scrolling-menu--inner-wrapper {
+  position: relative;
+  overflow: visible !important;
+  height: 216px;
+  width: 100%;
+}
+
+.HorizontalScrollMenuContainer:nth-child(even)
+  .react-horizontal-scrolling-menu--wrapper
+  .react-horizontal-scrolling-menu--inner-wrapper {
+  height: 261px;
+}
+
+.HorizontalScrollMenuContainer:nth-child(odd)
+  .react-horizontal-scrolling-menu--wrapper
+  .react-horizontal-scrolling-menu--inner-wrapper
+  .react-horizontal-scrolling-menu--item
+  .cardContainer
+  .card {
+  height: 75%;
+  width: 288px;
+}
+
+.HorizontalScrollMenuContainer:nth-child(even)
+  .react-horizontal-scrolling-menu--wrapper
+  .react-horizontal-scrolling-menu--inner-wrapper
+  .react-horizontal-scrolling-menu--item
+  .cardContainer
+  .card {
+  height: 80%;
+  width: 369px;
+}
+
+.react-horizontal-scrolling-menu--scroll-container {
+  height: 100% !important;
+}
+
+.react-horizontal-scrolling-menu--wrapper {
+  position: relative;
+}
+
+.MuiButtonBase-root {
+  color: gray !important;
+  transition-duration: 10ms, 10ms, 10ms, 10ms !important;
+}
+
+.react-horizontal-scrolling-menu--inner-wrapper:before {
+  content: "";
+  bottom: 0;
+  right: 0;
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 20%;
+  background: linear-gradient(
+    270deg,
+    #0a0a0e 12.29%,
+    rgba(10, 10, 14, 0.5) 34.96%,
+    rgba(10, 10, 14, 0.3) 50.01%,
+    rgba(10, 10, 14, 0) 71.32%,
+    rgba(10, 10, 14, 0) 96.4%
+  );
+}
+
+.react-horizontal-scrolling-menu--inner-wrapper:after {
+  content: "";
+  bottom: 0;
+  left: 0;
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 8%;
+  background: linear-gradient(
+    90deg,
+    rgba(10, 10, 14, 1) 5%,
+    rgba(10, 10, 14, 0.6) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.react-horizontal-scrolling-menu--arrow-left {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+}
+
+.react-horizontal-scrolling-menu--arrow-right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 1;
+}
+
+.react-horizontal-scrolling-menu--scroll-container {
+  background: rgba(10, 10, 14, 0.3);
+  transition: all 0.6s ease-in-out;
+}
+
+#arrowLeft {
+  transition: all 0.1s ease-in-out;
+  z-index: 1;
+  transform: translate(20%, -50%);
+}
+
+#arrowRight {
+  transition: all 0.1s ease-in-out;
+  z-index: 1;
+  transform: translate(-20%, -50%);
+}
+
+@media screen and (max-width: 768px) {
+  #arrowLeft {
+    display: none !important;
+  }
+
+  #arrowRight {
+    display: none !important;
+  }
+
+  .react-horizontal-scrolling-menu--arrow-right {
+    display: none !important;
+  }
+
+  .react-horizontal-scrolling-menu--arrow-left {
+    display: none !important;
+  }
+
+  .react-horizontal-scrolling-menu--scroll-container {
+    background: rgba(10, 10, 14, 0);
+  }
+
+  .react-horizontal-scrolling-menu--inner-wrapper:before {
+    display: none;
+  }
+
+  .react-horizontal-scrolling-menu--inner-wrapper:after {
+    display: none;
+  }
+
+  .HorizontalScrollMenuContainer:nth-child(odd) {
+    margin-left: 5px;
+  }
+
+  .HorizontalScrollMenuContainer:nth-child(odd)
+    .react-horizontal-scrolling-menu--wrapper
+    .react-horizontal-scrolling-menu--inner-wrapper
+    .react-horizontal-scrolling-menu--scroll-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .HorizontalScrollMenuContainer:nth-child(odd)
+    .react-horizontal-scrolling-menu--wrapper
+    .react-horizontal-scrolling-menu--inner-wrapper {
+    height: 80vw;
+  }
+
+  .HorizontalScrollMenuContainer:nth-child(odd)
+    .react-horizontal-scrolling-menu--wrapper
+    .react-horizontal-scrolling-menu--inner-wrapper
+    .react-horizontal-scrolling-menu--item {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 12px;
+  }
+
+  .HorizontalScrollMenuContainer:nth-child(odd)
+    .react-horizontal-scrolling-menu--wrapper
+    .react-horizontal-scrolling-menu--inner-wrapper
+    .react-horizontal-scrolling-menu--item
+    .cardContainer
+    .card {
+    height: 60%;
+    width: 100%;
+  }
+
+  .HorizontalScrollMenuContainer:nth-child(even)
+    .react-horizontal-scrolling-menu--wrapper
+    .react-horizontal-scrolling-menu--inner-wrapper {
+    height: 50vw;
+  }
+
+  .HorizontalScrollMenuContainer:nth-child(even)
+    .react-horizontal-scrolling-menu--wrapper
+    .react-horizontal-scrolling-menu--inner-wrapper
+    .react-horizontal-scrolling-menu--item
+    .cardContainer
+    .card {
+    height: 75%;
+    width: 73vw;
+  }
+
+  .HorizontalScrollMenuContainer:nth-child(odd)
+    .react-horizontal-scrolling-menu--wrapper
+    .react-horizontal-scrolling-menu--inner-wrapper
+    .react-horizontal-scrolling-menu--item
+    .cardContainer
+    .footerTitle,
+  .footerDescription {
+    font-size: 1.6rem !important;
+  }
+
+  .HorizontalScrollMenuContainer:nth-child(odd)
+    .react-horizontal-scrolling-menu--wrapper
+    .react-horizontal-scrolling-menu--inner-wrapper
+    .react-horizontal-scrolling-menu--item {
+    display: none;
+  }
+
+  .HorizontalScrollMenuContainer:nth-child(odd)
+    .react-horizontal-scrolling-menu--wrapper
+    .react-horizontal-scrolling-menu--inner-wrapper
+    .react-horizontal-scrolling-menu--item:nth-child(-n + 7) {
+    display: block;
+  }
+
+  .HorizontalScrollMenuContainer:nth-child(even)
+    .react-horizontal-scrolling-menu--wrapper
+    .react-horizontal-scrolling-menu--inner-wrapper
+    .react-horizontal-scrolling-menu--item
+    .cardContainer:active {
+    cursor: grabbing !important;
+    cursor: -moz-grabbing !important;
+    cursor: -webkit-grabbing !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .HorizontalScrollMenuContainer:nth-child(odd)
+    .react-horizontal-scrolling-menu--wrapper
+    .react-horizontal-scrolling-menu--inner-wrapper
+    .react-horizontal-scrolling-menu--item
+    .cardContainer
+    .footerTitle {
+    font-size: 1.2rem !important;
+    font-weight: 500 !important;
+  }
+
+  .HorizontalScrollMenuContainer:nth-child(odd)
+    .react-horizontal-scrolling-menu--wrapper
+    .react-horizontal-scrolling-menu--inner-wrapper
+    .react-horizontal-scrolling-menu--item
+    .cardContainer
+    .footerDescription {
+    font-size: 1.2rem !important;
+    font-weight: 300 !important;
+  }
+
+  .HorizontalScrollMenuContainer:nth-child(even)
+    .react-horizontal-scrolling-menu--wrapper
+    .react-horizontal-scrolling-menu--inner-wrapper
+    .react-horizontal-scrolling-menu--item
+    .cardContainer
+    .footerTitle {
+    font-size: 1.4rem !important;
+    font-weight: 500 !important;
+  }
+
+
+  .HorizontalScrollMenuContainer:nth-child(even)
+    .react-horizontal-scrolling-menu--wrapper
+    .react-horizontal-scrolling-menu--inner-wrapper
+    .react-horizontal-scrolling-menu--item
+    .cardContainer
+    .footerDescription {
+    font-size: 1.4rem !important;
+    font-weight: 400 !important;
+  }
+}
+
+/*HorizontalScrollMenu END*/
+.preventPointerEvent {
+  pointer-events: none;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.card-shadow {
+  filter: drop-shadow(7px 7px 38px rgba(33, 29, 38, 0.3));
+}
+
+/* .css-1kibpt0-MuiSkeleton-root::after{
+    animation: animation-wiooy9 1.2s linear 0.5s infinite !important;
+  } */
+.Toastify__toast {
+  text-align: center !important;
+  font-family: "iransansXV" !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  direction: rtl !important;
+  font-size: 20px !important;
+  border-radius: 10px !important;
+}
+
+.button-navigation-l {
+  box-sizing: content-box;
+
+  box-shadow: 0px -5px 18px rgba(0, 0, 0, 0.26);
+}
+@supports (-webkit-touch-callout: none) {
+  .button-navigation-l {
+    box-sizing: content-box;
+    padding-bottom: calc(env(safe-area-inset-bottom) - 24px); 
+    box-shadow: 0px -5px 18px rgba(0, 0, 0, 0.26);
+  }
+}
+
+.safe-area {
+  box-sizing: content-box;
+  padding-bottom: 0;
+}
+
+.container-padding {
+  padding-bottom: 30px;
+}
+@supports (-webkit-touch-callout: none) {
+  .container-padding {
+    padding-bottom: 70px;
+  }
+}
+
+.css-5xe99f-MuiLinearProgress-bar1{
+  background-color: #5E46F8 !important;
+  border-radius: 100px !important;
+}
+
+
+.float-button {
+  bottom: 60px;
+}
+@supports (-webkit-touch-callout: none) {
+  .float-button {
+    bottom: 24px;
+  }
+}
+
+.oldPrice-lineThrough {
+  text-decoration: line-through;
+  text-align: right;
+  text-decoration: underline !important;
+  text-underline-offset: -2px;
+  text-decoration-skip-ink: none;
+ 
+  text-decoration-thickness: 1px !important;
+}
+.oldPrice-lineThrough-gray {
+  text-decoration: line-through;
+  text-align: right;
+  text-decoration: underline !important;
+  text-underline-offset: -2px;
+  text-decoration-skip-ink: none;
+ text-decoration-color:#BBB8C2 !important ;
+  text-decoration-thickness: 1px !important;
+}
+.titless
+{
+
+    -webkit-animation: movingtitle 10s infinite alternate linear;
+    animation: movingtitle 10s infinite alternate linear;
+  /* added */
+ 
+}
+
+@-webkit-keyframes movingtitle
+{
+/* modified */
+    to {text-indent:100%;}
+}
+@keyframes movingtitle
+{
+/* modified */
+    to {text-indent:100%;}
+}

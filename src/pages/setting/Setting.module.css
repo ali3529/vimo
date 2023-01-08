@@ -1,0 +1,285 @@
+.settingPageContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.settingPageContentContainer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.settingPageContent {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10vh 0 0 0;
+}
+
+.profileContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    height: 20vw;
+    min-height: 100px;
+    max-height: 165px;
+    padding: 20px 10px 20px 10px;
+    background: var(--primary);
+}
+
+.profileEditContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.editTitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--greenLight);
+    transition: all .2s ease-in-out;
+}
+
+.editSVG {
+    width: 15px;
+    margin-left: 5px;
+    transition: all .2s ease-in-out;
+}
+
+@media screen and (min-width: 481px) {
+    .editTitle {
+        font-size: 1.6rem;
+    }
+
+    .editSVG {
+        width: 20px;
+    }
+}
+
+.profileInfoMainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profilePictureContainer {
+    width: 48px;
+    height: 48px;
+    background: var(--white);
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: 10px;
+}
+
+.profileName {
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all .2s ease-in-out;
+}
+
+.profileNumber {
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all .2s ease-in-out;
+}
+
+
+@media screen and (min-width: 481px) {
+    .profileName, .profileNumber {
+        font-size: 1.6rem;
+    }
+
+    .profilePictureContainer {
+        width: 58px;
+        height: 58px;
+    }
+}
+
+.settingItemContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.settingItem {
+    direction: rtl;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    height: 15vw;
+    min-height: 60px;
+    max-height: 100px;
+    background: var(--primary);
+    margin-bottom: 10px;
+    padding: clamp(10px, 2.5vw, 20px);
+}
+
+.titleContainer{
+    direction: rtl;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.settingItemBanner {
+    direction: rtl;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 95%;
+    height: 34vw;
+    min-height: 60px;
+    max-height: 314px;
+    background-image: url("../../assets/images/settingBanner.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--primary);
+    margin-bottom: 10px;
+    padding: clamp(10px, 2.5vw, 20px);
+}
+
+.btnContainer {
+    height: 100%;
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.btnLabel {
+    direction: rtl;
+    font-size: clamp(1.2rem, 4vw, 42px);
+    font-weight: 800;
+
+}
+
+.vip {
+    font-family: Ubuntu;
+}
+
+.bannerBtn {
+    height: 40%;
+    width: 100%;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--greenLight);
+    color: var(--primary);
+    font-size: 1.4rem;
+    font-weight: 700;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    .bannerBtn {
+        height: 45%;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .bannerBtn {
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .bannerBtn {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}
+
+
+.SVG {
+    width: 20px;
+    transition: all .2s ease-in-out;
+}
+
+@media screen and (min-width: 481px) {
+    .SVG {
+        width: 25px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .SVG {
+        width: 30px;
+    }
+}
+
+.itemTitle {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.itemDescription{
+    font-size: 1.4rem;
+}
+
+.ubuntu{
+    font-family: Ubuntu;
+}
+.cursorPointer{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+.mainInputContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    direction: rtl;
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+.inputTitle {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 2px;
+    text-shadow: 0 0 4px #212127;
+}
+
+.nameInputContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+    border-radius: 32px;
+    height: 51px;
+    width: 100%;
+    background: var(--primaryUltraLight);
+    border: 2px solid transparent;
+    margin-bottom: 2px;
+}
+
+.nameInput {
+    width: 95%;
+    height: 100%;
+    font-size: 1.4rem;
+    font-weight: 600;
+    direction: rtl;
+    color: var(--white);
+}
+
+.wrongNameNotification {
+    display: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--red);
+    text-shadow: 0 0 4px #212127;
+}

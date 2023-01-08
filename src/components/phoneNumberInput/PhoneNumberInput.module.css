@@ -1,0 +1,69 @@
+.mainInputContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    direction: rtl;
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+.inputTitle {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 2px;
+    text-shadow: 0 0 4px #212127;
+}
+
+.inputContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+    border-radius: 32px;
+    height: 51px;
+    width: 100%;
+    background: var(--primaryUltraLight);
+    border: 2px solid transparent;
+    margin-bottom: 2px;
+}
+
+.inputNumber {
+    width: 70%;
+    height: 100%;
+    font-size: 1.4rem;
+    font-weight: 700;
+    direction: ltr;
+    color: var(--white);
+}
+
+.preNumber {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--gray);
+    display: flex;
+    margin: 0 23px 0 20px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    direction: ltr;
+}
+
+.preNumber:after {
+    content: " ";
+    position: relative;
+    display: block;
+    height: 26px;
+    border: 2px solid var(--greenDark);
+    top: -2px;
+    left: 10px;
+    border-radius: 5px;
+}
+
+.wrongNumberNotification {
+    display: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--red);
+    text-shadow: 0 0 4px #212127;
+}
