@@ -11,7 +11,7 @@ public/temp-video
 /coverage
 
 # production
-/build
+# /build
 /dist
 
 # misc
