@@ -12,7 +12,7 @@ import { login, userData } from '../../redux/login/LoginSlice';
 import Resend from '../../components/login/assets/Resend';
 import { Box } from '@mui/system';
 import VimoIconSVG from '../../components/common/assets/VimoIconSVG';
-import TriangleLoginSVG from '../../components/common/assets/TriangleLoginSvg';
+// import TriangleLoginSVG from '../../components/common/assets/TriangleLoginSvg';
 import OtpComponent from '../login/OtpComponent';
 
 
@@ -93,7 +93,7 @@ function EditVerifyCode() {
                     <div className="bg-svg-gradient">
                         <div className="bg-svg-gradient2">
                             <div className="w-screen h-[237px] relative">
-                                <TriangleLoginSVG />
+                                {/* <TriangleLoginSVG /> */}
                             </div>
                         </div>
                     </div>

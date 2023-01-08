@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react'
-import TriangleLoginSvg from '../../components/login/assets/TriangleLoginSvg'
+// import TriangleLoginSvg from '../../components/login/assets/TriangleLoginSvg'
 import { getOtp, verifyCode } from '../../service/ApiClient';
 import { toast } from "react-toastify";
 import OtpComponent from './OtpComponent';
@@ -13,7 +13,7 @@ import { login, userData } from '../../redux/login/LoginSlice';
 import Resend from '../../components/login/assets/Resend';
 import { Box } from '@mui/system';
 import VimoIconSVG from '../../components/common/assets/VimoIconSVG';
-import TriangleLoginSVG from '../../components/common/assets/TriangleLoginSvg';
+// import TriangleLoginSVG from '../../components/common/assets/TriangleLoginSvg';
 
 
 function VerifyCode() {
@@ -104,7 +104,7 @@ function VerifyCode() {
                     <div className="bg-svg-gradient">
                         <div className="bg-svg-gradient2">
                             <div className="w-screen h-[237px] relative">
-                                <TriangleLoginSVG />
+                                {/* <TriangleLoginSVG /> */}
                             </div>
                         </div>
                     </div>

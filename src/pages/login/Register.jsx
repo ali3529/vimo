@@ -2,7 +2,7 @@ import {useMutation} from '@tanstack/react-query'
 import {useState} from 'react';
 import {useNavigate} from 'react-router-dom';
 import {toast} from 'react-toastify';
-import TriangleLoginSVG from '../../components/common/assets/TriangleLoginSvg';
+// import TriangleLoginSVG from '../../components/common/assets/TriangleLoginSvg';
 import VimoIconSVG from '../../components/common/assets/VimoIconSVG';
 import {CustomButton} from '../../components/customButton/CustomButton'
 import {register} from '../../service/ApiClient';
@@ -28,7 +28,7 @@ function Register() {
                     <div className="bg-svg-gradient">
                         <div className="bg-svg-gradient2">
                             <div className="w-screen h-[237px] relative">
-                                <TriangleLoginSVG/>
+                                {/* <TriangleLoginSVG/> */}
                             </div>
                         </div>
                     </div>
