@@ -16,9 +16,9 @@ export default defineConfig({
       },
       workbox: {
         skipWaiting:true,
-        sourcemap: true,
-        cleanupOutdatedCaches: false,
-        globPatterns: ['**/*.{js,css,html,ico,png,svg,woff,ttf,woff2}']
+        // sourcemap: true,
+        // cleanupOutdatedCaches: false,
+        globPatterns: ['**/*.{js,jsx,css,html,ico,png,svg,woff,ttf,woff2}']
       }
    })],
 });
